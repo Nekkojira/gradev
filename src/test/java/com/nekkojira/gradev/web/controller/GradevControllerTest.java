@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest
-public class GradevControllerTest extends MvcTest {
+public class GradevControllerTest extends Controller {
 
     @Test
     public void shouldReturnContent() throws Exception {

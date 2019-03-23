@@ -18,7 +18,8 @@ public class GradevApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		assertThat(gradevController).isNotNull();
+		GradevApplication.main(new String[]{});
+	    assertThat(gradevController).isNotNull();
 	}
 
 }

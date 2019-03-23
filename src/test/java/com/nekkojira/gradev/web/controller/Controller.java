@@ -9,7 +9,7 @@ import org.springframework.test.web.servlet.result.ModelResultMatchers;
 import org.springframework.test.web.servlet.result.StatusResultMatchers;
 import org.springframework.test.web.servlet.result.ViewResultMatchers;
 
-public class MvcTest {
+public class Controller {
     @Autowired
     protected MockMvc mockMvc;
     protected ResultHandler print = MockMvcResultHandlers.print();
