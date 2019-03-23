@@ -1,6 +1,6 @@
 package com.nekkojira.gradev;
 
-import com.nekkojira.gradev.web.controller.GradevController;
+import com.nekkojira.gradev.web.GradevController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class GradevApplicationTests {
 
-	@Autowired
-	private GradevController gradevController;
+    @Autowired
+    private transient GradevController gradevController;
 
-	@Test
-	public void contextLoads() {
-		assertThat(gradevController).isNotNull();
-	}
+    @Test
+    public void contextLoads() {
+        GradevApplication.main(new String[]{});
+        assertThat(gradevController).isNotNull();
+    }
 
 }
